@@ -1,0 +1,246 @@
+{
+  "id": "8a60f757-5120-468c-a83a-187c27f76da1",
+  "version": "2.0",
+  "name": "test2",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "9e760292-aa48-401b-8fa1-d44387ed4a64",
+    "name": "Test1: App is Running",
+    "commands": [{
+      "id": "154be98d-ca3a-40e9-8111-861a5bfb0032",
+      "comment": "",
+      "command": "open",
+      "target": "/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad4e5e77-a9a4-4a6a-9803-44f9b470f576",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd9855cf-c81a-4cb5-9403-be26ccac33c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Mountain app is up and running!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afc57fb6-5c2a-44bd-af16-7671a9a32c38",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Mountain app is up and running!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "412a4f6d-e206-4a77-b709-2608a1acfb3c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Mountain app is up and running!')]", "xpath:innerText"]
+      ],
+      "value": "Mountain app is up and running!"
+    }]
+  }, {
+    "id": "6810e01b-efc8-4797-8cfe-c08346137ac4",
+    "name": "Test2: GETMAPPING",
+    "commands": [{
+      "id": "e1528288-5c35-415e-a90d-2a5b253b57ba",
+      "comment": "",
+      "command": "open",
+      "target": "/services/mountain/1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d829c180-95c2-4760-bbe9-6bca7da8cda4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "668x458",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ec86b51-93ee-468f-becd-dba504d2f7c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'{\"id\":1,\"title\":\"Laax\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2bceecf-fffa-4aee-80b9-a711587d1152",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'{\"id\":1,\"title\":\"Laax\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": "{\"id\":1,\"title\":\"Laax\",\"mountain_type\":\"Graubünden\"}"
+    }]
+  }, {
+    "id": "6c9cc928-bdfd-400c-a2f7-a85ef3459966",
+    "name": "Test3: Alle Datensätze anzeigen",
+    "commands": [{
+      "id": "30a62678-742c-43d1-92e8-4c1fbe9568bd",
+      "comment": "",
+      "command": "open",
+      "target": "/services/mountains",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1ea97b4-359c-45fd-b327-74913198a44b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "668x458",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "682bf187-ebed-46df-955a-594d73b55f42",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'[{\"key\":{\"key\":1,\"name\":\"todoKey\"},\"name\":\"Laax\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Graubünden\",\"details\":[\"Graubünden\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":2,\"name\":\"todoKey\"},\"name\":\"Zermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Wallis\",\"details\":[\"Wallis\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":3,\"name\":\"todoKey\"},\"name\":\"Andermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Uri\",\"details\":[\"Uri\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":4,\"name\":\"todoKey\"},\"name\":\"Engelberg\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Nidwalden\",\"details\":[\"Nidwalden\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":5,\"name\":\"todoKey\"},\"name\":\"Braunwald\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Glarus\",\"details\":[\"Glarus\"],\"order\":0.0,\"form\":null}]')]", "xpath:innerText"]
+      ],
+      "value": "[{\"key\":{\"key\":1,\"name\":\"todoKey\"},\"name\":\"Laax\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Graubünden\",\"details\":[\"Graubünden\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":2,\"name\":\"todoKey\"},\"name\":\"Zermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Wallis\",\"details\":[\"Wallis\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":3,\"name\":\"todoKey\"},\"name\":\"Andermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Uri\",\"details\":[\"Uri\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":4,\"name\":\"todoKey\"},\"name\":\"Engelberg\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Nidwalden\",\"details\":[\"Nidwalden\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":5,\"name\":\"todoKey\"},\"name\":\"Braunwald\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Glarus\",\"details\":[\"Glarus\"],\"order\":0.0,\"form\":null}]"
+    }]
+  }, {
+    "id": "3559e3be-c276-47a6-b654-1bfe289ec82d",
+    "name": "Test5: Delete id {6} und starte die Abfrage erneut",
+    "commands": [{
+      "id": "09f87576-cfe4-49c1-bb38-52cb8ba9fa5c",
+      "comment": "",
+      "command": "open",
+      "target": "/services/mountains",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c951c6e5-c14c-4424-a71d-e7b69d9d41d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "668x458",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb86f298-8ec6-4bb3-a368-1990fd1b6ecb",
+      "comment": "",
+      "command": "click",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'[{\"key\":{\"key\":2,\"name\":\"todoKey\"},\"name\":\"Zermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Wallis\",\"details\":[\"Wallis\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":3,\"name\":\"todoKey\"},\"name\":\"Andermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Uri\",\"details\":[\"Uri\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":4,\"name\":\"todoKey\"},\"name\":\"Engelberg\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Nidwalden\",\"details\":[\"Nidwalden\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":5,\"name\":\"todoKey\"},\"name\":\"Braunwald\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Glarus\",\"details\":[\"Glarus\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":6,\"name\":\"todoKey\"},\"name\":\"Sedrun\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Graubünden\",\"details\":[\"Graubünden\"],\"order\":0.0,\"form\":null}]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21f241dd-a5da-4920-aaa2-5c0435752220",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=pre",
+      "targets": [],
+      "value": "[{\"key\":{\"key\":2,\"name\":\"todoKey\"},\"name\":\"Zermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Wallis\",\"details\":[\"Wallis\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":3,\"name\":\"todoKey\"},\"name\":\"Andermatt\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Uri\",\"details\":[\"Uri\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":4,\"name\":\"todoKey\"},\"name\":\"Engelberg\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Nidwalden\",\"details\":[\"Nidwalden\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":5,\"name\":\"todoKey\"},\"name\":\"Braunwald\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Glarus\",\"details\":[\"Glarus\"],\"order\":0.0,\"form\":null},{\"key\":{\"key\":6,\"name\":\"todoKey\"},\"name\":\"Sedrun\",\"color\":null,\"icon\":null,\"url\":null,\"page\":null,\"type\":null,\"active\":true,\"tooltip\":\"Graubünden\",\"details\":[\"Graubünden\"],\"order\":0.0,\"form\":null}]"
+    }]
+  }, {
+    "id": "8f1b4a5d-fa14-4736-8c95-6978e6815164",
+    "name": "Test4: Füge id{6} hinzu und starte die Abfrage",
+    "commands": [{
+      "id": "d474b3b7-6a07-426f-83a9-13592979e80a",
+      "comment": "",
+      "command": "open",
+      "target": "/services/mountain/6",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "554df6cc-6511-49af-a5be-271363fb56a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "668x458",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e90d093-92b5-48b2-bf81-a380b467e175",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'{\"id\":6,\"title\":\"Sedrun\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95c82f6e-9593-4f30-a702-e2f447e0569e",
+      "comment": "",
+      "command": "click",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'{\"id\":6,\"title\":\"Sedrun\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "466f2540-d3b6-4b7f-bce5-9d9ec9287cfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'{\"id\":6,\"title\":\"Sedrun\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af260eb4-7821-4c52-bff0-4f293525392e",
+      "comment": "",
+      "command": "click",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'{\"id\":6,\"title\":\"Sedrun\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac9e0d15-98fa-4510-8a9d-8fa44fadbbf5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'{\"id\":6,\"title\":\"Sedrun\",\"mountain_type\":\"Graubünden\"}')]", "xpath:innerText"]
+      ],
+      "value": "{\"id\":6,\"title\":\"Sedrun\",\"mountain_type\":\"Graubünden\"}"
+    }]
+  }],
+  "suites": [{
+    "id": "3e75ee1d-9b85-4606-baf1-cfb99f57e09a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e760292-aa48-401b-8fa1-d44387ed4a64"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
